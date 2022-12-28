@@ -354,6 +354,7 @@ GameObject:
   - component: {fileID: 87574762}
   - component: {fileID: 87574761}
   - component: {fileID: 87574765}
+  - component: {fileID: 87574766}
   m_Layer: 5
   m_Name: "\u756B\u5E03\u5C0D\u8A71\u7CFB\u7D71"
   m_TagString: Untagged
@@ -456,6 +457,20 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &87574766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87574760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d39f7a55a285d64492112be929739f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueIntervalTime: 0.1
+  dialogueOpening: {fileID: 11400000, guid: ef4ab0cd94bf92449bd17057235d79c8, type: 2}
 --- !u!1001 &143378367
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,32 +1,40 @@
-
+ï»¿
 using UnityEngine;
 using TMPro;
 
 namespace Nick
 {
     /// <summary>
-    /// ¹ï¸Ü¨t²Î
+    /// å°è©±ç³»çµ±
     /// </summary>
 
 
     public class DialogueSystem : MonoBehaviour
     {
-        [SerializeField, Header("¹ï¸Ü¶¡¹j"), Range(0, 0.5f)]
+        #region è³‡æ–™å€åŸŸ
+        [SerializeField, Header("å°è©±é–“éš”"), Range(0, 0.5f)]
         private float dialogueIntervalTime = 0.1f;
+        [SerializeField, Header("é–‹é ­å°è©±")]
+        private DialogueData dialogueOpening;
 
-        private WaitForSeconds dialogueInterval;
+        private WaitForSeconds dialogueInterval => new WaitForSeconds(dialogueIntervalTime);
+
 
         private CanvasGroup groupDialogue;
         private TextMeshProUGUI textName;
         private TextMeshProUGUI textContent;
         private GameObject goTriangle;
+        #endregion
+        #region äº‹ä»¶å€åŸŸ
 
         private void Awake()
         {
-            groupDialogue = GameObject.Find("µe¥¬¹ï¸Ü¨t²Î").GetComponent<CanvasGroup>();
-            textName = GameObject.Find("¹ï¸ÜªÌ¦WºÙ").GetComponent<TextMeshProUGUI>();
-            textContent = GameObject.Find("¹ï¸Ü¤º®e").GetComponent<TextMeshProUGUI>();
-            goTriangle = GameObject.Find("¹ï¸Ü§¹¦¨¹Ï¥Ü");
-        }
+            groupDialogue = GameObject.Find("ç•«å¸ƒå°è©±ç³»çµ±").GetComponent<CanvasGroup>();
+            textName = GameObject.Find("å°è©±è€…åç¨±").GetComponent<TextMeshProUGUI>();
+            textContent = GameObject.Find("å°è©±å…§å®¹").GetComponent<TextMeshProUGUI>();
+            goTriangle = GameObject.Find("å°è©±å®Œæˆåœ–ç¤º");
+            goTriangle.SetActive(false);
+        } 
+        #endregion
     }
 }
