@@ -15,15 +15,17 @@ namespace Nick
         // 4. 使用 StartCoroutine 啟動
 
         //字串 string 為 char 陣列
-        private string testDialogue = "這裡好恐怖，我想趕快離開...";
+        private string textDialogue = "這裡是哪裡?好冷哦...";
 
         private void Awake()
         {
-            StartCoroutine(Test());
+            //StartCoroutine(Test());
 
-            print("取得測試對話的第一個字:" + testDialogue[0]);
+            //print("取得測試對話的第一個字:" + textDialogue[0]);
 
-            StartCoroutine(ShowDialogue());
+            //StartCoroutine(ShowDialogue());
+
+            StartCoroutine(ShowTextUseFor());
         }
 
         private IEnumerator Test()
@@ -37,16 +39,28 @@ namespace Nick
 
         private IEnumerator ShowDialogue()
         {
-            print(testDialogue[0]);
+            print(textDialogue[0]);
             yield return new WaitForSeconds(0.1f);
-            print(testDialogue[1]);
+            print(textDialogue[1]);
             yield return new WaitForSeconds(0.1f);
-            print(testDialogue[2]);
+            print(textDialogue[2]);
             yield return new WaitForSeconds(0.1f);
 
 
 
         }
+
+        private IEnumerator ShowTextUseFor()
+        {
+            for (int i = 0; i < textDialogue.Length; i++)
+            {
+                print(textDialogue[i]);
+                yield return new WaitForSeconds(0.3f);
+            }
+        }
+
+
+
     
     }
 

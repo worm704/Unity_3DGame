@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15738c1f67afca47a47560929a78f55, type: 3}
   m_Name: OpenDialogue
   m_EditorClassIdentifier: 
-  dialogueName: 
-  dialogueContents:
-  - "\u65E9\u4E0A\u597D\u4E2D\u570B!\u73FE\u5728\u6211\u6709\u51B0\u6DC7\u6DCB!"
-  - "\u6211\u5F88\u559C\u6B61\u51B0\u6DC7\u6DCB!\u4F46\u662F~~~"
+  dialogueName: TEXT
+  dialogueContent:
+  - "\u6211\u8AB0\t"
+  - "\u6050\u6016\u54E6\n"
+  - "\u55DA\u55DA\u55DA\u55DA\u55DA\u55DA"
