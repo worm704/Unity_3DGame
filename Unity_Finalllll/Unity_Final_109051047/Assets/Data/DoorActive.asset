@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbf39c0318cf83e4f899d392698ac059, type: 3}
-  m_Name: OpenDialogue
+  m_Name: DoorActive
   m_EditorClassIdentifier: 
-  dialogueName: "\u9F8D\u83EF"
+  dialogueName: 
   dialogueContent:
-  - "\u50B3\u805E\u9019\u88E1\u85CF\u8457\u5927\u91CF\u8CA1\u5BF6....."
-  - "\u4ECA\u5929\u6211\u8981\u4F86\u628A\u5B83\u5011\u90FD\u5E36\u56DE\u5BB6!!!"
-  - "\u53EA\u662F\u600E\u9EBC\u611F\u89BA\u6709\u9EDE\u6DBC\u6DBC\u7684......"
+  - "\u62FF\u5230\u9470\u5319\u4E86\uFF0C\u8D95\u7DCA\u62FF\u5230\u5BF6\u7269\u9583\u4EBA......"
